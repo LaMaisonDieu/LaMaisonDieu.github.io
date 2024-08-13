@@ -24,12 +24,25 @@ h1 {
     bottom:25px;
     width:20vw;
     float:left;
-    padding: 10px;
+    padding: 1.5vw;
+    overflow-y: auto;/* 溢出时出现滚动条 */
+    
 }
 
 .menu a {
     font-size:smaller ;
+    text-decoration:none;
+    display:block;
+    width:17vw;
+    color:grey;
+}
 
+.menu a:hover{
+    color:aqua;
+}
+
+.menu a:active{
+    color:aquamarine;
 }
 
 .content {
