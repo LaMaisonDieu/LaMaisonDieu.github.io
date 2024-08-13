@@ -18,7 +18,7 @@ html, body {
     margin:0;
     background-color:grey;
     height:50px;
-    width:100%;
+    width:100vw;
     padding-left: 20px;
     padding-top:5px;
     z-index: 1000;
@@ -43,6 +43,7 @@ h1 {
     overflow-y: auto;
     padding-left: 20px;
     min-width:120px;
+    margin-top:50px;
 }
 
 .menu a {
@@ -62,9 +63,10 @@ h1 {
     color:aquamarine;
 }
 
-/*
+
 .content {
-    margin:0;
+    padding:0;
+    /* margin:0;
     background-color:#EEEEEE;
     position:fixed;
     top:50px;
@@ -75,9 +77,9 @@ h1 {
     overflow-y:auto;
     padding-left: 20px;
     padding-right: 20px;
-    box-sizing: border-box;
+    box-sizing: border-box; */
 }
-*/
+
 
 .footer {
     margin:0;
