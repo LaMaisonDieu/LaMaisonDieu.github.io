@@ -3,45 +3,89 @@
 
 <head>
     <meta charset="utf-8">
-    <title>这是001</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>塔之下的Arkadia</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+
+    <style>
+
+    </style>
 </head>
 
 <body>
-    <h1>这是002页面</h1>
-    <p>Hello World！</p>
-    <p>
-        <a href="../index.html">回到根路由</a>
-    </p>
-    <p>
-    <table border="1">
-        <tr>
-            <td>100</td>
-        </tr>
-    </table>
+    <div class="row">
+        <div class="col-3">
+            <ul class="nav nav-underline flex-column menu">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                            data-bs-toggle="collapse" data-bs-target="#test-collapse">
+                            >
+                        </button>
+                        <a class="nav-link" href="#">111</a>
+                    </div>
 
-    <h4>一行三列:</h4>
-    <table border="1">
-        <tr>
-            <td>100</td>
-            <td>200</td>
-            <td>300</td>
-        </tr>
-    </table>
+                    <div class="collapse show" id="test-collapse" style="">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="nav-link">1-1</a></li>
+                            <li><a href="#" class="nav-link">1-2</a></li>
+                            <li><a href="#" class="nav-link">1-3</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
-    <h4>两行三列:</h4>
-    <table border="1">
-        <tr>
-            <td>100</td>
-            <td>200</td>
-            <td>300</td>
-        </tr>
-        <tr>
-            <td>400</td>
-            <td>500</td>
-            <td>600</td>
-        </tr>
-    </table>
-    </p>
+        <div class="col container">
+
+            <h1>这是002页面</h1>
+            <p>Hello World！</p>
+            <p>
+                <a href="../index.html">回到根路由</a>
+            </p>
+            <p>
+            <table border="1">
+                <tr>
+                    <td>100</td>
+                </tr>
+            </table>
+
+            <h4>一行三列:</h4>
+            <table border="1">
+                <tr>
+                    <td>100</td>
+                    <td>200</td>
+                    <td>300</td>
+                </tr>
+            </table>
+
+            <h4>两行三列:</h4>
+            <table border="1">
+                <tr>
+                    <td>100</td>
+                    <td>200</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>400</td>
+                    <td>500</td>
+                    <td>600</td>
+                </tr>
+            </table>
+            </p>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
