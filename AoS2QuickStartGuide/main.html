@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AoS2快速入门指南</title>
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/css/general.css">
@@ -17,18 +18,36 @@
         </div>
     </div>
 
-    <div class="menu">
-        <p><b>目录</b><br></p>
-        <p><a href="#preface">开始前的问答与建议</a></p>
-        <p><a href="../index.html">跳转 返回键</a></p>
-        <!-- <p><a href="./main.html">跳转 原地tp</a></p> -->
-
-
-
-
-    </div>
-
     <div class="row">
+        <div class="col-3 menu">
+            <ul class="nav nav-underline flex-column">
+                <li class="nav-item">
+                    <p class="nav-link active">目录</p>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#preface">开始前的问答与建议</a>
+                </li>
+                <li class="nav-item">
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                            data-bs-toggle="collapse" data-bs-target="#test-collapse-1">
+                            >
+                        </button>
+                        <a class="nav-link" href="#">折叠测试</a>
+                    </div>
+                    <div class="collapse show" id="test-collapse-1">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="../002.html" class="nav-link">正确前往002</a></li>
+                            <li><a href="#" class="nav-link">1-2</a></li>
+                            <li><a href="#" class="nav-link">1-3</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">跳转 返回键</a>
+                </li>
+            </ul>
+        </div>
         <div class="content">
             <h2 id="preface">开始前的问答与建议</h2>
             <p>
@@ -60,10 +79,20 @@
                 毫无格斗游戏制作经验的橙汁在制作他们第一款像样的格斗游戏时，自然在游戏系统的完成度与角色平衡性上失败了。但考虑到年代限制与游戏本身的独特程度，对于喜欢的并不能算是什么大问题。<br>
                 而Steam版AoS2变成如今的样子，fbf与游戏的社区（这里主要指AoS2国际Discord社区）罄竹难书。又懒又无能的fbf违背原本游戏设计的更新并不能像他们嘴上说的一样，让角色在竞技玩法中更加有趣，更具有使用价值，只会像另一个1.6.3一样，赶走一批游戏的核心玩家。<br>
                 这个话题如果就此展开会变得没完没了，所以暂且到此为止；后面会有专门的章节详细作说明。
-</b><br>
+                </b><br>
                 关于这个问题的答案很简单，<b>这篇文档面向的是1.6.x版本，而不是1.9</b>。<br>
-                与此同时，我从很早以前就对AoS2社区极度缺少资料的现象不满了。Steam上对AoS2的差评，也有一部分来自“游戏缺乏引导”。游戏内自带的How to Play固然基本上介绍了并不复杂的游戏内容，但过于浅显点到为止，而即便是在同人版AoS2发布超过12年，Steam版AoS2发售6年的如今，社区中也仍然不存在一个完善、全面的教学；甚至连对局录像都非常少见，有价值的录像更不用说，各种意义上的资料可以说是几乎没有。这种情况的出现固然要归结于AoS2本身题材的小众与社区的加拉化发展，但只是埋怨就只是和其他人一样，解决不了任何问题。虽然我也想在这里顺带提到我对社区的各种其他不满，但这与文档的第一主旨无关，更详细的内容将会在后记之类的地方中提到，如果你对此感到好奇，在正篇内容读完后看一看也无妨。<br>
-                
+                与此同时，我从很早以前就对AoS2社区极度缺少资料的现象不满了。Steam上对AoS2的差评，也有一部分来自“游戏缺乏引导”。游戏内自带的How to
+                Play固然基本上介绍了并不复杂的游戏内容，但过于浅显点到为止，而即便是在同人版AoS2发布超过12年，Steam版AoS2发售6年的如今，社区中也仍然不存在一个完善、全面的教学；甚至连对局录像都非常少见，有价值的录像更不用说，各种意义上的资料可以说是几乎没有。这种情况的出现固然要归结于AoS2本身题材的小众与社区的加拉化发展，但只是埋怨就只是和其他人一样，解决不了任何问题。虽然我也想在这里顺带提到我对社区的各种其他不满，但这与文档的第一主旨无关，更详细的内容将会在后记之类的地方中提到，如果你对此感到好奇，在正篇内容读完后看一看也无妨。<br>
+
+            </p>
+
+            <p>
+                游戏外的内容说的有点多，最后再回归一下游戏本身。虽然我始终说“不推荐深入去玩”，但格斗游戏终归是跟水平接近的人玩最开心，即便是这个内核在有些人看来可能有些无聊的世纪末游戏也一样。AoS2由于本身玩家基数极低，缺乏容易查阅与有效的资料等原因，加拉化发展的玩家群体水平参差不齐。在我来看，真正理解了游戏的玩法，能够一致且正确地去玩的选手即便放眼全世界也屈指可数。反过来说，系统地学科学地玩，只要有那个想法，即便是从零开始剑指世界最强也没有问题。
+                <br>
+                另外虽然文档标题叫做快速入门指南，也并不代表我会快速略过一些内容或是不深入讨论一些东西。这篇文档与wiki的内容实际上应该不会有太大的差距，但阅读顺序以及些许细节大概会经过我重新编排，以让初学者更容易理解。
+                <br>
+                笔者始终认为，在AoS2玩家中，真正入门的人屈指可数，这是AoS2社区加拉化的生态的无可奈何；而当读者完全掌握了本文档的全部内容时，与顶点的玩家的差距实质上就只有经验了，这则是格斗游戏绝无仅有的魅力，无论是看似遥不可及的Major
+                Champion还是屏幕前的你，无尽延伸的修罗道仅有眼前一条。
             </p>
 
             <p>
@@ -78,8 +107,17 @@
 
 
             </p>
-            <hr />
-            <p>内容</p>
+            <hr>
+            <br>
+            <h2 id="GameBasic">游戏基础</h2>
+            <p>
+                在任何格斗游戏，新的学习始终从基础操作开始。而对于有独特系统的AoS2来说，这一步则格外重要。如果你玩过旋光之轮舞或是Psychic
+                Force，你会发现一些类似的系统或机制，但整体来说它们在AoS2中发挥的作用都有很大的差距。
+                <br>
+                技巧建立于基础之上，多说无用，让我们开始加速吧。
+
+            </p>
+            <h3 id="Controls">输入控制</h3>
 
 
 
@@ -93,11 +131,14 @@
 
             <p></p>
         </div>
-        <div class="footer">
+        <div class="row">
+            <div class="footer">
+
+            </div>
 
         </div>
 
-    </div>
+        <script src="../js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
